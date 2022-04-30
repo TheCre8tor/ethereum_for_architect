@@ -51,6 +51,7 @@ contract Ballot {
     }
 
     /// Delegate your vote to the voter [to]
+    /// Delegate: a person sent or authorized to represent others
     function delegate(address to) external {
         // assign reference
         Voter storage sender = voters[msg.sender];
